@@ -1,13 +1,10 @@
 import java.util.Scanner;
 
-public class VehicleService {
+public class AltVehicleService {
     IVehicleInspector inspector;
     VehicleFactory factory = new VehicleFactory();
 
-    VehicleService() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter 'Alt' for Alt Vehicle Inspector");
-        String prop = scanner.nextLine();
+    AltVehicleService(String prop) {
 	    inspector = factory.getVehicleInspector(prop);
     }
 
