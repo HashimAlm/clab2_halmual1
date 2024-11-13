@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Act2Main",
+            "request": "launch",
+            "mainClass": "Act2Main",
+            "projectName": "clab2_halmual1_c0f718b8",
+            "vmArgs": "-Ddata=data.json -Dvi=alt",
+            "args": []
+        },
+        {
+            "type": "java",
+            "name": "Act3Main",
+            "request": "launch",
+            "mainClass": "Act3Main",
+            "projectName": "clab2_halmual1_c0f718b8",
+            "vmArgs": "-Ddata=data.json -Dvi=alt -Des=one",
+            "args": []
+        },
+        {
+            "type": "java",
+            "name": "AltMain",
+            "request": "launch",
+            "mainClass": "AltMain",
+            "projectName": "clab2_halmual1_c0f718b8",
+            "vmArgs": "-Ddata=data.json -Dvi=alt",
+            "args": []
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "clab2_halmual1_c0f718b8"
+        }
+    ]
+}
