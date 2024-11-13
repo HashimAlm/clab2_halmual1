@@ -1,3 +1,5 @@
+https://github.com/HashimAlm/clab2_halmual1/tree/main
+
 At this commit Activity 1 has been completed
 
 Activity 2 has been completed with this commit:
