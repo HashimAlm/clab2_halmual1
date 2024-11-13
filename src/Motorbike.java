@@ -22,4 +22,7 @@ public class Motorbike implements IVehicle {
     public int accept(IVehicleInspector vehicleInspector) {
         return vehicleInspector.visit(this);
     }
+    public float co2Emissions() {
+        return (float) (8887 * (1 + (0.01 * (100 - engineCapacity))));
+    }
 }
