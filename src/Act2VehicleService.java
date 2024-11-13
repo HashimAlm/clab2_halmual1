@@ -1,9 +1,20 @@
-public class AltVehicleService {
+public class Act2VehicleService {
     IVehicleInspector inspector;
     VehicleFactory factory = new VehicleFactory();
+    private static Act2VehicleService VSinstance;
 
-    AltVehicleService(String prop) {
+    private Act2VehicleService(String prop) {
+        
 	    inspector = factory.getVehicleInspector(prop);
+    }
+
+    public static Act2VehicleService getVehicleService() {
+        if(VSinstance == null) {
+            String vi = System.getProperty("vi");
+            VSinstance = new Act2VehicleService(vi);
+        }
+
+        return VSinstance;
     }
 
     /* Returns the total Service charge for all the vehicles
